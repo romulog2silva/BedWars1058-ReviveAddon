@@ -19,43 +19,50 @@ O **BedWars1058 ReviveAddon** é um plugin que revive automaticamente qualquer j
 1. **Faça o download** do arquivo `.jar` da última [release](../../releases)
 2. **Coloque o arquivo** na pasta `plugins/` do seu servidor
 3. **Reinicie o servidor** ou execute `/reload`
-4. **Configure** o arquivo `plugins/BedWars1058-ReviveAddon/config.yml` conforme necessário
+4. **Configure** o arquivo `plugins/BedWars1058ReviveAddon/config.yml` conforme necessário
 5. **Reinicie novamente** para aplicar as alterações
+
+RELOAD NÃO SUPORTADO!!!
 
 ## ⚙️ Configuração
 
-Acesse o arquivo `plugins/BedWars1058-ReviveAddon/config.yml` para personalizar o plugin:
+Acesse o arquivo `plugins/BedWars1058ReviveAddon/config.yml` para personalizar o plugin:
 
 ```yaml
-# Ativar/Desativar o addon
-enabled: true
+messages:
+  no-permission: "&cVocê precisa ser OP para usar este comando."
+  usage: "&cUso correto: /revive <jogador>"
+  player-offline: "&cO jogador não está online."
+  cannot-revive: "&cEste jogador não tem um histórico de final kill ativo para ser revivido."
+  not-spectating: "&cO jogador não está no modo espectador em uma partida."
+  success: "&aVocê reviveu o jogador %player% com sucesso!"
+  revived: "&aVocê foi revivido pelos deuses do servidor e voltou à partida!"
 
-# Mensagem ao reviver um jogador
-revive-message: "§a&Player foi revivido!"
-
-# Delay para reviver (em ticks)
-revive-delay: 20
-
-# Som ao reviver
-sound:
-  enabled: true
-  type: "ENTITY_RESURRECT"
+  gui-only-players: "&cApenas jogadores dentro do jogo podem abrir o menu."
+  gui-main-title: "&8Reviver: Espectadores"
+  gui-head-name: "&e%player%"
+  gui-player-offline: "&cEste jogador saiu do servidor."
+  gui-not-spectating: "&cEste jogador não está mais espectando a partida."
+  gui-teams-title: "&8Times de: &7%player%"
+  gui-team-item: "%color%Time %team%"
+  gui-internal-error: "&cOcorreu um erro interno ao tentar reviver."
+  gui-revived-admin: "&aVocê reviveu %player% e forçou a entrada no %color%Time %team%&a!"
+  gui-revived-target: "&aVocê foi salvo pelos deuses e colocado no %color%Time %team%&a!"
 ```
 
-> 💡 **Dica:** Todas as mensagens suportam cores com `&` (ex: `&a` para verde, `&c` para vermelho)
+> 💡 **Dica:** Todas as mensagens suportam cores com `&`
 
 ## 🎮 Como Funciona
 
 1. Quando um jogador morre durante a kill final
 2. O addon detecta o evento e processa o revivo
-3. O jogador é revivido automaticamente
-4. Uma mensagem personalizável é exibida a todos
+3. O jogador pode ser revivio através do comando /revive ou /revivegui
 
 ## 📦 Requisitos
 
-- **Servidor:** Spigot 1.17.1+ ou Paper
+- **Servidor:** Spigot 1.20+
 - **Plugin:** [BedWars1058](https://www.spigotmc.org/resources/bedwars1058-1-8-1-20-5.63714/)
-- **Java:** Java 11 ou superior
+- **Java:** Java 17 ou superior
 
 ## 🐛 Reportar Bugs
 
