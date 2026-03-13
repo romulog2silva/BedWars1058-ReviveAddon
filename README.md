@@ -61,7 +61,7 @@ messages:
 ## 📦 Requisitos
 
 - **Servidor:** Spigot 1.20+
-- **Plugin:** [BedWars1058](https://www.spigotmc.org/resources/bedwars1058-1-8-1-20-5.63714/)
+- **Plugin:** [BedWars1058](https://www.spigotmc.org/resources/bedwars1058-opensource.97320/)
 - **Java:** Java 17 ou superior
 
 ## 🐛 Reportar Bugs
