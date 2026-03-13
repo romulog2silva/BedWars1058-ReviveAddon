@@ -6,6 +6,8 @@ Um addon inovador para **BedWars1058** que oferece a funcionalidade de reviver j
 
 O **BedWars1058 ReviveAddon** é um plugin que revive automaticamente qualquer jogador que morra durante a kill final da partida de BedWars. Com configuração totalmente traduzível no `config.yml`, você pode personalizar completamente a experiência do seu servidor.
 
+Infelizmente não pude disponibilizá-lo em source code para lançamento público.
+
 ### ✨ Características
 
 - ✅ Revive jogadores após morte final
