@@ -64,7 +64,9 @@ messages:
 
 - **Servidor:** Spigot 1.20+
 - **Plugin:** [BedWars1058](https://www.spigotmc.org/resources/bedwars1058-opensource.97320/)
+- **Plugin:** [TAB](https://www.spigotmc.org/resources/tab-1-7-x-1-21-11.57806/)
 - **Java:** Java 17 ou superior
+
 
 ## 🐛 Reportar Bugs
 
